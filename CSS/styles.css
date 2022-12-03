@@ -1,0 +1,79 @@
+* {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+body {
+    background-color: #37F4C3;
+    background-image: url(/CSS/fondoculebra.png);
+    margin-top: 90px;
+    display: block;
+}
+.titulo{ 
+    margin-inline: 200px;
+    font-size: 200%;
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: fantasy;
+}
+
+#board, .boardInfo {
+    margin: auto;
+    display: block;
+    max-width: 300px;
+
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#start, .boardInfo {
+    font-size: 25px;
+}
+
+#gameOver {
+    padding: 2px;
+    font-size: medium;
+    color: red;
+    font-weight:bold;
+    display: none;
+    padding-left: 650px;
+
+}
+
+.boardInfo {
+
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+#start {
+    background-color: #f35a69;
+    border: none;
+    color: white;
+}
+
+#scoreBoard {
+    display: inline-flex;
+}
+
+.square {
+    aspect-ratio: 1;
+}
+
+.emptySquare {
+    align-items: center;
+    background-color: gray;
+    border-color:black;
+    
+}
+
+.snakeSquare {
+    background-color: #86FF14;
+}
+
+.foodSquare {
+    background-color: red;
+}
